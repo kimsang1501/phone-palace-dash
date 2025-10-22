@@ -1,0 +1,181 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 15 Pro Max",
+    "brand": "Apple",
+    "price": 29990000,
+    "originalPrice": 32990000,
+    "image": "https://images.unsplash.com/photo-1697643798051-e93e01bedb4e?w=800&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1697643798051-e93e01bedb4e?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1678652197831-2d180705cd2c?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=800&h=800&fit=crop"
+    ],
+    "description": "iPhone 15 Pro Max với chip A17 Pro mạnh mẽ, camera 48MP, khung titan cao cấp",
+    "specs": {
+      "screen": "6.7 inch Super Retina XDR",
+      "chip": "Apple A17 Pro",
+      "ram": "8GB",
+      "storage": "256GB",
+      "camera": "48MP Main + 12MP Ultra Wide + 12MP Telephoto",
+      "battery": "4422 mAh"
+    },
+    "featured": true,
+    "stock": 25
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S24 Ultra",
+    "brand": "Samsung",
+    "price": 27990000,
+    "originalPrice": 30990000,
+    "image": "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=800&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&h=800&fit=crop"
+    ],
+    "description": "Galaxy S24 Ultra với bút S Pen, màn hình Dynamic AMOLED 2X, camera 200MP",
+    "specs": {
+      "screen": "6.8 inch Dynamic AMOLED 2X",
+      "chip": "Snapdragon 8 Gen 3",
+      "ram": "12GB",
+      "storage": "256GB",
+      "camera": "200MP Main + 50MP Telephoto + 12MP Ultra Wide + 10MP Telephoto",
+      "battery": "5000 mAh"
+    },
+    "featured": true,
+    "stock": 18
+  },
+  {
+    "id": 3,
+    "name": "Xiaomi 14 Ultra",
+    "brand": "Xiaomi",
+    "price": 19990000,
+    "originalPrice": 22990000,
+    "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&h=800&fit=crop"
+    ],
+    "description": "Xiaomi 14 Ultra với camera Leica, màn hình LTPO AMOLED, sạc nhanh 90W",
+    "specs": {
+      "screen": "6.73 inch LTPO AMOLED",
+      "chip": "Snapdragon 8 Gen 3",
+      "ram": "16GB",
+      "storage": "512GB",
+      "camera": "50MP Main + 50MP Telephoto + 50MP Ultra Wide + 50MP Periscope",
+      "battery": "5300 mAh, Sạc 90W"
+    },
+    "featured": true,
+    "stock": 30
+  },
+  {
+    "id": 4,
+    "name": "OPPO Find X7 Ultra",
+    "brand": "OPPO",
+    "price": 21990000,
+    "originalPrice": 24990000,
+    "image": "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=800&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=800&h=800&fit=crop"
+    ],
+    "description": "OPPO Find X7 Ultra với camera Hasselblad, màn hình cong, hiệu năng mạnh mẽ",
+    "specs": {
+      "screen": "6.82 inch LTPO AMOLED",
+      "chip": "Snapdragon 8 Gen 3",
+      "ram": "16GB",
+      "storage": "512GB",
+      "camera": "50MP Main + 50MP Ultra Wide + 50MP Telephoto + 50MP Periscope",
+      "battery": "5000 mAh, Sạc 100W"
+    },
+    "featured": false,
+    "stock": 15
+  },
+  {
+    "id": 5,
+    "name": "iPhone 14 Pro",
+    "brand": "Apple",
+    "price": 23990000,
+    "originalPrice": 26990000,
+    "image": "https://images.unsplash.com/photo-1663499482523-1c0d2469b1d5?w=800&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1663499482523-1c0d2469b1d5?w=800&h=800&fit=crop"
+    ],
+    "description": "iPhone 14 Pro với Dynamic Island, camera 48MP, chip A16 Bionic",
+    "specs": {
+      "screen": "6.1 inch Super Retina XDR",
+      "chip": "Apple A16 Bionic",
+      "ram": "6GB",
+      "storage": "256GB",
+      "camera": "48MP Main + 12MP Ultra Wide + 12MP Telephoto",
+      "battery": "3200 mAh"
+    },
+    "featured": false,
+    "stock": 40
+  },
+  {
+    "id": 6,
+    "name": "Samsung Galaxy Z Fold5",
+    "brand": "Samsung",
+    "price": 35990000,
+    "originalPrice": 40990000,
+    "image": "https://images.unsplash.com/photo-1592286927505-b0501e8511c7?w=800&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1592286927505-b0501e8511c7?w=800&h=800&fit=crop"
+    ],
+    "description": "Galaxy Z Fold5 màn hình gập, bút S Pen, đa nhiệm hoàn hảo",
+    "specs": {
+      "screen": "7.6 inch Dynamic AMOLED 2X (Gập)",
+      "chip": "Snapdragon 8 Gen 2",
+      "ram": "12GB",
+      "storage": "512GB",
+      "camera": "50MP Main + 12MP Ultra Wide + 10MP Telephoto",
+      "battery": "4400 mAh"
+    },
+    "featured": true,
+    "stock": 8
+  },
+  {
+    "id": 7,
+    "name": "Xiaomi 13T Pro",
+    "brand": "Xiaomi",
+    "price": 12990000,
+    "originalPrice": 14990000,
+    "image": "https://images.unsplash.com/photo-1567581935884-3349723552ca?w=800&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1567581935884-3349723552ca?w=800&h=800&fit=crop"
+    ],
+    "description": "Xiaomi 13T Pro với camera Leica 50MP, màn hình 144Hz, sạc nhanh 120W",
+    "specs": {
+      "screen": "6.67 inch AMOLED 144Hz",
+      "chip": "MediaTek Dimensity 9200+",
+      "ram": "12GB",
+      "storage": "256GB",
+      "camera": "50MP Main + 12MP Telephoto + 12MP Ultra Wide",
+      "battery": "5000 mAh, Sạc 120W"
+    },
+    "featured": false,
+    "stock": 50
+  },
+  {
+    "id": 8,
+    "name": "OPPO Reno11 Pro",
+    "brand": "OPPO",
+    "price": 10990000,
+    "originalPrice": 12990000,
+    "image": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=800&h=800&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=800&h=800&fit=crop"
+    ],
+    "description": "OPPO Reno11 Pro thiết kế mỏng nhẹ, camera chân dung 32MP, sạc nhanh 80W",
+    "specs": {
+      "screen": "6.7 inch AMOLED 120Hz",
+      "chip": "MediaTek Dimensity 8200",
+      "ram": "12GB",
+      "storage": "256GB",
+      "camera": "50MP Main + 32MP Telephoto + 8MP Ultra Wide",
+      "battery": "4600 mAh, Sạc 80W"
+    },
+    "featured": false,
+    "stock": 35
+  }
+]
