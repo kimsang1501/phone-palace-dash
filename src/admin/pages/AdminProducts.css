@@ -200,3 +200,231 @@
     min-width: 800px;
   }
 }
+
+/* --- BẮT ĐẦU PHẦN CSS CHO MODAL THÊM SẢN PHẨM --- */
+
+/* Lớp phủ nền mờ */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(0 0% 0% / 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: modal-fade-in 0.2s ease-out;
+  padding: 1rem; /* Thêm padding để modal không dính sát cạnh */
+  box-sizing: border-box;
+}
+
+/* Nội dung Modal - Thay đổi quan trọng */
+.modal-content {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: calc(var(--radius) * 2);
+  box-shadow: var(--shadow-lg);
+  width: 90%;
+  max-width: 550px;
+
+  /* Cấu trúc flex cho modal */
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh; /* Giới hạn chiều cao tối đa */
+
+  /* Bỏ padding ở đây để kiểm soát padding ở từng phần */
+  padding: 0;
+
+  animation: modal-scale-up 0.2s ease-out;
+  overflow: hidden; /* Đảm bảo border-radius hoạt động */
+}
+
+/* Keyframes cho animation */
+@keyframes modal-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-scale-up {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Header của Modal - Cố định */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem; /* Thêm padding nội bộ */
+  border-bottom: 1px solid hsl(var(--border));
+  flex-shrink: 0; /* Không cho co lại */
+}
+
+.modal-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(var(--foreground));
+  margin: 0;
+}
+
+/* Nút đóng Modal */
+.btn-close-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition-base);
+  background: transparent;
+  color: hsl(var(--muted-foreground));
+}
+
+.btn-close-modal:hover {
+  background: hsl(var(--secondary));
+  color: hsl(var(--foreground));
+}
+
+/* Form - Phần có thể cuộn */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem; /* Thêm padding nội bộ */
+
+  flex: 1; /* Cho phép co dãn */
+  overflow-y: auto; /* Tự động thêm thanh cuộn khi cần */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+}
+
+/* Style cho Input */
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="url"] {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  transition: var(--transition-base);
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus,
+.form-group input[type="url"]:focus {
+  outline: none;
+  border-color: hsl(var(--primary));
+  box-shadow: 0 0 0 2px hsl(var(--primary) / 0.2);
+}
+
+/* Hàng trong form (Giá và Tồn kho) */
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+}
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Checkbox */
+.form-group-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.form-group-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: hsl(var(--primary));
+}
+
+.form-group-checkbox label {
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Khu vực nút bấm - Cố định */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 1.5rem 2rem; /* Thêm padding nội bộ */
+  border-top: 1px solid hsl(var(--border));
+  flex-shrink: 0; /* Không cho co lại */
+}
+
+/* Nút Hủy (btn-cancel) */
+.btn-cancel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  background: hsl(var(--secondary));
+  color: hsl(var(--foreground));
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.btn-cancel:hover {
+  background: hsl(var(--muted));
+}
+
+/* Nút Lưu (btn-submit) */
+.btn-submit {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  background: var(--gradient-primary);
+  color: hsl(var(--primary-foreground));
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-base);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* --- KẾT THÚC PHẦN CSS CHO MODAL --- */
