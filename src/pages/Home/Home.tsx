@@ -85,6 +85,23 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* CTA Section */}
+      <section className="cta-section">
+        <div className="cta-container">
+          <h2 className="cta-title">Đăng ký nhận thông tin khuyến mãi</h2>
+          <p className="cta-description">
+            Nhận ngay mã giảm giá 10% cho đơn hàng đầu tiên
+          </p>
+          <div className="cta-form">
+            <input
+              type="email"
+              placeholder="Nhập email của bạn"
+              className="cta-input"
+            />
+            <button className="cta-button">Đăng ký</button>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
